@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<link rel="SHORTCUT ICON" href="icon.png" type="image/x-icon">
+		<title>Cloth</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				font-family: arial;
+			}
+
+			.container{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100vh;
+				animation: animate 17s ease-in-out infinite;
+				background-size: cover;
+			}
+
+
+			.outer{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100vh;
+				background: rgba(255, 255, 255, 0)
+			}
+
+			.details{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.details h1{
+				font-size: 4em;
+				color: #fff;
+				text-align: center;
+			}
+
+			.details h2{
+				text-transform: capitalize;
+				font-family: sans-serif;
+				font-style:unset;	
+				color: #fff;
+			}
+
+			.details h2 span:nth-child(1){
+				color: #fff;
+			}
+
+			.details h2 span:nth-child(2){
+				color: yellow;
+			}
+
+			.img1{
+				text-align: center;
+				z-index: 100;
+				position: relative;
+				height:25%;
+				width:auto;
+				margin: 50px;
+				align-content: center;
+				float: right;
+				transition: ease-in-out 1s;
+			}
+
+			.img1:hover{	
+				transform: scale(.9);
+    			-ms-transform: scale(.9);
+    			-webkit-transform: scale(.9);
+			}
+
+			.name{
+				transition: ease-in-out 1s;
+			}
+
+			.name:hover{
+				transform: scale(.9);
+    			-ms-transform: scale(.9);
+    			-webkit-transform: scale(.9);
+			}
+
+
+
+			@keyframes animate{
+				0%,100%{
+					background-image: url(1.png);
+				}
+				16.66%{
+					background-image: url(2.png);
+				}
+				33.32%{
+					background-image: url(3.png);
+				}
+				49.98%{
+					background-image: url(4.png);
+				}
+				66.64%{
+					background-image: url(5.png);
+				}
+				83.3%{
+					background-image: url(back_2.png);
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+					<div>
+						<a href="https://www.blender.org/"><img class="img1" src="blender\blender_community_badge_white.png"></a>
+					</div>
+			<div class="details">
+					
+					<a href="Contact.html"><img class="name" src="text.png"></a>     
+					
+					<h2><span>Created and rendered useing Blender</span></h2>
+			</div>		
+		</div>
+	</body>
+</html>
